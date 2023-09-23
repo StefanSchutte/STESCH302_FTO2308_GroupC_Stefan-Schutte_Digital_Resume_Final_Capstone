@@ -2,6 +2,11 @@
 
 This is Stefan Schutte's Digital Resume.
 
+Stefan Schutte
+digital-resume
+
+Description:
+
 My landing page takes you to the header part. Here you can see my image as well as a hero image. Below the background image you will see a nav bar, which can be utilized to navigate throughout the page to different sections. THe nav bar is sticky and will stay at top of page throughout scrolling. There is also a direct link to Github and the Contact Details section.
 
 The next section is the About page where I give a brief introduction of myself.
@@ -14,8 +19,7 @@ The projects section is used to showcase previous projects I have done. Images w
 
 Skills sections is just a basic unordered list.
 
-Stefan Schutte
-digital-resume
+The Footer contains a table which has links to my social profiles/pages. CSS grid is used to display it well organized throughout all displays. My footer also contains a button link to my form which sends a email to my email address through formsubmit.
 
 List of technologies used in project:
 HTML
