@@ -84,6 +84,10 @@ nav ul li {
   border-radius: 15px;
 }
 
+nav ul li:hover {
+  background-color: rgb(58, 54, 54);
+}
+
 a {
   text-decoration: none;
   color: rgb(197, 197, 243);
@@ -221,6 +225,10 @@ footer a {
     font-size: 3vh;
   }
 
+  h2 {
+    font-size: 5vh;
+  }
+
   .education {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -256,8 +264,9 @@ footer a {
   }
 
   h2 {
-    font-size: 5vh;
+    font-size: 3vh;
   }
+
   /* nav */
   a {
     font-size: small;

@@ -52,6 +52,11 @@ textarea {
   margin: 30px;
 }
 
+.btn:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
 label {
   text-align: left;
   padding: 10px;
