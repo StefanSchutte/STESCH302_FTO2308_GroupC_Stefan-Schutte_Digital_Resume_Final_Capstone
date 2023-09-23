@@ -124,7 +124,7 @@ h3 {
 /* Projects */
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
   justify-content: center;
   gap: 50px;
@@ -225,6 +225,10 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   tr {
