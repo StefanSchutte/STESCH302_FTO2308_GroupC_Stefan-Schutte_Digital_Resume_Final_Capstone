@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  border: 5px solid rgb(111, 108, 108);
+  border-radius: 15px;
+  font-family: "Mukta", sans-serif;
+  font-size: medium;
+  font-size: 17px;
+  width: 100%vw;
+  padding: 5px;
+}
+
+header {
+  font-size: 8vh;
+  position: relative;
+  top: -40px;
+  left: 100px;
+}
+
+h1 {
+  color: black;
+  font-family: "Permanent Marker", sans-serif;
+}
+
+header p {
+  font-size: 4vh;
+  font-family: "Shadows into light", sans-serif;
+}
+
+.img {
+  overflow: hidden;
+  border-radius: 50%;
+  max-width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+
+  margin-left: 50px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  background-color: transparent;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  height: 85vh;
+  width: 100%;
+  background-image: url(img/IMG-9965.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+/* nav */
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  background-color: transparent;
+}
+
+nav ul li {
+  background-color: rgb(9, 59, 59);
+  padding: 5px;
+  margin: 0;
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(197, 197, 243);
+  font-size: large;
+}
+
+.section {
+  margin: 20px;
+  margin-bottom: 25px;
+  padding: 25px;
+  color: white;
+}
+
+h2 {
+  font-family: "Skranji", sans-serif;
+  font-size: 9vh;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+h4 {
+  font-size: larger;
+  color: rgb(240, 240, 171);
+}
+
+h3 {
+  font-size: larger;
+  color: rgb(152, 238, 152);
+  margin-top: 30px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  justify-content: center;
+  gap: 50px;
+}
+
+h5 {
+  font-size: 3vh;
+  color: rgb(244, 145, 145);
+}
+
+/* footer */
+.footer {
+  background-color: rgb(58, 57, 57);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 0;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+  padding: 10px;
+}
+
+td a {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+footer a {
+  color: white;
+  font-size: 150%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.formLink {
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 5px;
+}
+
+.b2tbtn {
+  border-radius: 50%;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1000px) {
+  .img {
+    margin: 0;
+    max-width: 270px;
+    height: 270px;
+  }
+  aside {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  header {
+    font-size: large;
+  }
+
+  header p {
+    font-size: 2vh;
+  }
+
+  .education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 550px) {
+  .img {
+    margin: 0;
+    max-width: 270px;
+    height: 270px;
+  }
+
+  header {
+    font-size: 8vh;
+  }
+
+  header p {
+    font-size: 1vh;
+  }
+
+  h2 {
+    font-size: 5vh;
+  }
+  /* nav */
+  nav {
+    display: inline-grid;
+
+    grid-template-columns: repeat(6, 1fr);
+  }
+  aside {
+    display: grid;
+  }
+
+  nav ul li {
+    font-size: 5px;
+    padding: 1px;
+  }
+  .navList li {
+    margin-right: 0;
+  }
+
+  .education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+/* laptop */
+@media only screen and (min-width: 1220px) {
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
