@@ -19,7 +19,6 @@ header {
   font-size: 7vh;
   position: relative;
   top: -40px;
-  left: 100px;
 }
 
 h1 {
@@ -143,6 +142,10 @@ h5 {
   margin-bottom: 0;
 }
 
+.footerContainer {
+  display: grid;
+}
+
 table {
   display: flex;
   justify-content: center;
@@ -186,6 +189,7 @@ footer a {
 }
 
 /* TABLET */
+
 @media only screen and (max-width: 1000px) {
   .img {
     margin: 0;
@@ -204,11 +208,11 @@ footer a {
   }
 
   header {
-    font-size: 4vh;
+    font-size: 5vh;
   }
 
   header p {
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
   .education {
@@ -234,11 +238,11 @@ footer a {
   }
 
   header {
-    font-size: 2vh;
+    font-size: 4vh;
   }
 
   header p {
-    font-size: 1vh;
+    font-size: 2vh;
   }
 
   h2 {
