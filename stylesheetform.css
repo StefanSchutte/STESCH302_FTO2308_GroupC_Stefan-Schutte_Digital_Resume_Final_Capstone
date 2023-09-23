@@ -1,13 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
 body {
   background-color: black;
   color: white;
+  border: 40px solid silver;
+  border-radius: 25px;
+  width: 100%vw;
+  height: 100%vh;
+  font-family: "Mooli", sans-serif;
+  margin: 15px;
 }
 
 .fullForm {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px;
+  padding: 15px;
   flex-direction: center;
 }
 
@@ -18,9 +26,11 @@ body {
 
 h4 {
   font-size: 50px;
-  font-family: "Ubuntu", sans-serif;
   color: whitesmoke;
-  padding: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 input,
 select,
@@ -45,4 +55,21 @@ textarea {
 label {
   text-align: left;
   padding: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    border: 10px solid silver;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 200px;
+    height: 50px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
 }
