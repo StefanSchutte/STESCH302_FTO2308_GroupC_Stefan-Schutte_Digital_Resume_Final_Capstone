@@ -121,6 +121,7 @@ h3 {
   margin-top: 30px;
 }
 
+/* Projects */
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -173,15 +174,20 @@ footer a {
   margin-top: 50px;
 }
 
+/* Form */
+
 .formLink {
   border: 5px solid white;
   border-radius: 15px;
 }
 
+/* Back 2 Top */
+
 #back-to-top {
   position: fixed;
   right: 20px;
   bottom: 5px;
+  opacity: 0.7;
 }
 
 .b2tbtn {
