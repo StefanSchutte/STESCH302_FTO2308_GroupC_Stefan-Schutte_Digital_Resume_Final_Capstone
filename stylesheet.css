@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  font-size: 8vh;
+  font-size: 7vh;
   position: relative;
   top: -40px;
   left: 100px;
@@ -195,10 +195,16 @@ footer a {
   aside {
     display: inline-grid;
     place-items: center;
+    justify-content: center;
+  }
+
+  nav ul li {
+    font-size: 5px;
+    padding: 3px;
   }
 
   header {
-    font-size: large;
+    font-size: 4vh;
   }
 
   header p {
@@ -228,7 +234,7 @@ footer a {
   }
 
   header {
-    font-size: 8vh;
+    font-size: 2vh;
   }
 
   header p {
@@ -239,11 +245,10 @@ footer a {
     font-size: 5vh;
   }
   /* nav */
-  nav {
-    display: inline-grid;
-
-    grid-template-columns: repeat(6, 1fr);
+  a {
+    font-size: small;
   }
+
   aside {
     display: grid;
   }
@@ -256,9 +261,13 @@ footer a {
     margin-right: 0;
   }
 
+  .nav li {
+    margin: 1px;
+  }
+
   .education {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
