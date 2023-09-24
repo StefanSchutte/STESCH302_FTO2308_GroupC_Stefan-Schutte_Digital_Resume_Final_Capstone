@@ -100,7 +100,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: rgb(58, 54, 54);
+  background-color: rgb(36, 49, 34);
 }
 
 a {
@@ -151,7 +151,7 @@ h4 {
 
 h5 {
   font-size: 3vh;
-  color: rgb(244, 145, 145);
+  color: rgb(242, 153, 153);
 }
 
 /* footer */
@@ -198,6 +198,12 @@ footer a {
 .formLink {
   border: 5px solid white;
   border-radius: 15px;
+  background-color: rgb(9, 59, 59);
+  color: rgb(197, 197, 243);
+}
+
+.formLink:hover {
+  background-color: rgb(36, 49, 34);
 }
 
 /* Back 2 Top */
