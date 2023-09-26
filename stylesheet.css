@@ -10,7 +10,6 @@ body {
   border-radius: 15px;
   font-family: "Mukta", sans-serif;
   font-size: medium;
-  font-size: 17px;
   width: 100%vw;
   padding: 5px;
 }
@@ -22,7 +21,8 @@ aside {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: self-start;
   justify-content: space-between;
   height: 85vh;
   width: 100%;
@@ -32,14 +32,14 @@ aside {
 }
 
 header {
-  font-size: 7vh;
-  position: absolute;
-  right: 30px;
-  top: -40px;
+  font-size: 5vh;
+  display: flex;
+  flex-direction: column;
   animation: headerSlide 2s ease forwards;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   height: 100px;
+  margin-top: 60px;
 }
 @keyframes headerSlide {
   from {
@@ -56,14 +56,14 @@ h1 {
 }
 
 header p {
-  font-size: 4vh;
+  font-size: 3vh;
   font-family: "Shadows into light", sans-serif;
   color: rgb(255, 255, 255);
 }
 
 .careerTitle {
-  font-family: sans-serif;
-  color: gray;
+  font-family: "Shadows into light", sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 .githubHeader {
@@ -90,7 +90,7 @@ header p {
   height: 350px;
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  margin: 50px;
   animation: imgSlide 2s ease forwards;
 }
 @keyframes imgSlide {
@@ -174,7 +174,7 @@ h2 {
 
 h3 {
   font-size: larger;
-  color: rgb(240, 240, 171);
+  color: rgb(228, 228, 191);
 }
 
 /* Edu Section */
@@ -187,7 +187,7 @@ h3 {
 
 h4 {
   font-size: larger;
-  color: rgb(152, 238, 152);
+  color: rgb(169, 234, 169);
   margin-top: 30px;
 }
 
@@ -202,13 +202,13 @@ h4 {
 
 h5 {
   font-size: 3vh;
-  color: rgb(242, 153, 153);
+  color: rgb(236, 164, 164);
 }
 
 /* Footer */
 
 .footerContainer {
-  display: grid;
+  text-align: center;
 }
 
 .footer {
@@ -218,18 +218,18 @@ h5 {
   margin-bottom: 0;
 }
 
-table {
-  display: flex;
+.contactDetailSection {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   justify-content: center;
   align-items: center;
 }
 
-td {
+.contact {
   padding: 10px;
 }
 
-td a {
-  display: inline-block;
+.contact img {
   overflow: hidden;
   border-radius: 50%;
   width: 100px;
@@ -260,18 +260,31 @@ footer a {
 /* ------------------------TABLET------------------------------ */
 
 @media only screen and (max-width: 1000px) {
+  body {
+    font-size: 17px;
+  }
+
   aside {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
-    gap: 2rem;
     flex-wrap: wrap;
   }
 
   .img {
-    max-width: 200px;
-    height: 200px;
+    max-width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+    animation: imgSlide 2s ease forwards;
+  }
+  @keyframes imgSlide {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
 
   header {
@@ -314,8 +327,7 @@ footer a {
 
   /* Footer */
 
-  tr {
-    display: grid;
+  .contactDetailSection {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -324,26 +336,44 @@ footer a {
 /* ----------------------MOBILE--------------------------------- */
 
 @media only screen and (max-width: 550px) {
+  body {
+    font-size: 15px;
+  }
+
   aside {
-    display: grid;
-    text-align: center;
+    background-image: none;
+    background-color: gray;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 
   .img {
     margin: 0;
-    max-width: 170px;
-    height: 170px;
+    max-width: 230px;
+    height: 230px;
   }
 
   header {
-    font-size: 4vh;
+    font-size: 3vh;
     margin: 0;
   }
 
   header p {
     font-size: 2vh;
     padding: 1px;
+  }
+  /* here */
+  .githubHeader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }
+  .contactMeImg {
+    position: absolute;
+    top: 0;
+    right: 70px;
   }
 
   /* Nav */
@@ -373,6 +403,10 @@ footer a {
 
   /* Sections */
 
+  .section {
+    margin: 10px;
+  }
+
   h2 {
     font-size: 5vh;
   }
@@ -390,14 +424,15 @@ footer a {
     gap: 50px;
   }
 
-  .contactMeImg {
-    top: 270px;
+  /* Footer */
+
+  .contactDetailSection {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  tr {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+  .contact img {
+    max-width: 100%;
+    height: 100%;
   }
 }
 
@@ -406,5 +441,9 @@ footer a {
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  body {
+    font-size: 19px;
   }
 }
