@@ -15,10 +15,39 @@ body {
   padding: 5px;
 }
 
+/* Aside */
+
+aside {
+  background-color: transparent;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85vh;
+  width: 100%;
+  background-image: url(img/IMG-9965.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
 header {
   font-size: 7vh;
-  position: relative;
+  position: absolute;
+  right: 30px;
   top: -40px;
+  animation: headerSlide 2s ease forwards;
+  justify-content: center;
+  width: 50%;
+  height: 100px;
+}
+@keyframes headerSlide {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(90px);
+  }
 }
 
 h1 {
@@ -29,9 +58,15 @@ h1 {
 header p {
   font-size: 4vh;
   font-family: "Shadows into light", sans-serif;
+  color: rgb(255, 255, 255);
 }
 
-.ghheader {
+.careerTitle {
+  font-family: sans-serif;
+  color: gray;
+}
+
+.githubHeader {
   position: absolute;
   top: 0;
   right: 0;
@@ -46,6 +81,8 @@ header p {
   border-radius: 50%;
 }
 
+/* Profile Image */
+
 .img {
   overflow: hidden;
   border-radius: 50%;
@@ -53,8 +90,16 @@ header p {
   height: 350px;
   display: flex;
   align-items: center;
-
   margin-left: 50px;
+  animation: imgSlide 2s ease forwards;
+}
+@keyframes imgSlide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .img img {
@@ -62,25 +107,20 @@ header p {
   height: 100%;
 }
 
-aside {
-  background-color: transparent;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  display: flex;
-  align-items: center;
-  height: 85vh;
-  width: 100%;
-  background-image: url(img/IMG-9965.JPG);
-  background-position: center;
-  background-size: cover;
+/* Back 2 Top */
+
+#goToTop {
+  position: fixed;
+  opacity: 0.7;
+  top: 20px;
+  left: 20px;
 }
 
-/* nav */
-.nav li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 5px;
+.b2tbtn {
+  border-radius: 50%;
 }
+
+/* Nav */
 
 nav {
   position: sticky;
@@ -90,6 +130,12 @@ nav {
   align-items: center;
   padding: 1px;
   background-color: transparent;
+}
+
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
 }
 
 nav ul li {
@@ -109,8 +155,10 @@ a {
   font-size: large;
 }
 
+/* Sections (Main)*/
+
 .section {
-  margin: 20px;
+  margin: 30px;
   margin-bottom: 25px;
   padding: 25px;
   color: white;
@@ -124,14 +172,17 @@ h2 {
   padding: 3%;
 }
 
+h3 {
+  font-size: larger;
+  color: rgb(240, 240, 171);
+}
+
+/* Edu Section */
+
 .education {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
-}
-h3 {
-  font-size: larger;
-  color: rgb(240, 240, 171);
 }
 
 h4 {
@@ -140,11 +191,11 @@ h4 {
   margin-top: 30px;
 }
 
-/* Projects */
+/* Projects Section*/
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   justify-content: center;
   gap: 50px;
 }
@@ -154,16 +205,17 @@ h5 {
   color: rgb(242, 153, 153);
 }
 
-/* footer */
+/* Footer */
+
+.footerContainer {
+  display: grid;
+}
+
 .footer {
   background-color: rgb(58, 57, 57);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-bottom: 0;
-}
-
-.footerContainer {
-  display: grid;
 }
 
 table {
@@ -184,16 +236,15 @@ td a {
   height: 100px;
 }
 
+/* Form */
+
 footer a {
-  color: white;
   font-size: 150%;
   text-decoration: none;
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-
-/* Form */
 
 .formLink {
   border: 5px solid white;
@@ -206,48 +257,49 @@ footer a {
   background-color: rgb(36, 49, 34);
 }
 
-/* Back 2 Top */
-
-#goToTop {
-  position: fixed;
-  right: 20px;
-  bottom: 5px;
-  opacity: 0.7;
-}
-
-.b2tbtn {
-  border-radius: 50%;
-}
-
-/* TABLET */
+/* ------------------------TABLET------------------------------ */
 
 @media only screen and (max-width: 1000px) {
-  .img {
-    margin: 0;
-    max-width: 270px;
-    height: 270px;
-  }
   aside {
-    display: inline-grid;
-    place-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
+
+  .img {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  header {
+    font-size: 5vh;
+  }
+  @keyframes headerSlide {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  header p {
+    font-size: 2vh;
+    padding: 1px;
+  }
+
+  /* Nav */
 
   nav ul li {
     font-size: 5px;
     padding: 3px;
   }
 
-  header {
-    font-size: 5vh;
-  }
-
-  header p {
-    font-size: 3vh;
-  }
-
   h2 {
-    font-size: 5vh;
+    font-size: 6vh;
   }
 
   .education {
@@ -260,6 +312,8 @@ footer a {
     grid-template-columns: 1fr 1fr;
   }
 
+  /* Footer */
+
   tr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -267,47 +321,60 @@ footer a {
   }
 }
 
-/* MOBILE */
+/* ----------------------MOBILE--------------------------------- */
 
 @media only screen and (max-width: 550px) {
+  aside {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+  }
+
   .img {
     margin: 0;
-    max-width: 270px;
-    height: 270px;
-    top: 1000px;
+    max-width: 170px;
+    height: 170px;
   }
 
   header {
     font-size: 4vh;
+    margin: 0;
   }
 
   header p {
     font-size: 2vh;
+    padding: 1px;
   }
 
-  h2 {
-    font-size: 3vh;
-  }
-
-  /* nav */
+  /* Nav */
   a {
     font-size: small;
-  }
-
-  aside {
-    display: grid;
   }
 
   nav ul li {
     font-size: 5px;
     padding: 1px;
   }
+
   .navList li {
     margin-right: 0;
   }
 
   .nav li {
     margin: 1px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  /* Sections */
+
+  h2 {
+    font-size: 5vh;
   }
 
   .education {
@@ -323,6 +390,10 @@ footer a {
     gap: 50px;
   }
 
+  .contactMeImg {
+    top: 270px;
+  }
+
   tr {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,7 +402,7 @@ footer a {
 }
 
 /* laptop */
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 1024px) {
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
