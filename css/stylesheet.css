@@ -175,7 +175,7 @@ h2 {
   padding: 3%;
 }
 
-h3 {
+.educationHeading {
   font-size: larger;
   color: rgb(232, 232, 176);
 }
@@ -188,7 +188,7 @@ h3 {
   gap: 50px;
 }
 
-h4 {
+.experienceHeading {
   font-size: larger;
   color: rgb(169, 234, 169);
   margin-top: 30px;
@@ -203,8 +203,8 @@ h4 {
   gap: 50px;
 }
 
-h5 {
-  font-size: 3vh;
+.projectsHeading {
+  font-size: larger;
   color: rgb(236, 164, 164);
 }
 
