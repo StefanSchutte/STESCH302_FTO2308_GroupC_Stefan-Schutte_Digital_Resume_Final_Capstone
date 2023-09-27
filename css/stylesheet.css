@@ -41,7 +41,7 @@ header {
   width: 100%;
   max-height: 300px;
 
-  margin-top: -200px;
+  margin-top: -220px;
 }
 @keyframes headerSlide {
   from {
@@ -94,7 +94,6 @@ header p {
   align-items: center;
   margin: 50px;
   margin-top: 70px;
-
   animation: imgSlide 2s ease forwards;
 }
 @keyframes imgSlide {
@@ -335,10 +334,15 @@ footer a {
     grid-template-columns: 1fr 1fr;
   }
 
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   /* Footer */
 
   .contactDetailSection {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
   }
 }
@@ -351,9 +355,6 @@ footer a {
   }
 
   aside {
-    background-image: none;
-    background-color: rgb(84, 83, 83);
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -363,30 +364,35 @@ footer a {
     margin: 0;
     max-width: 250px;
     height: 250px;
+    margin-top: 15px;
+    animation: none;
   }
 
   header {
     font-size: 25px;
     margin: 0;
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
+    animation: none;
   }
 
   header p {
     font-size: 2vh;
     padding: 1px;
   }
-  /* here */
+
   .githubHeader {
-    position: absolute;
     top: 0;
     right: 0;
     margin: 20px;
+    width: 45px;
+    height: 45px;
   }
   .contactMeImg {
-    position: absolute;
     top: 0;
     left: 0;
+    width: 45px;
+    height: 45px;
   }
 
   /* Nav */
@@ -433,14 +439,13 @@ footer a {
   .projects {
     display: grid;
     grid-template-columns: 1fr;
-
     gap: 50px;
   }
 
   /* Footer */
 
   .contactDetailSection {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .contact img {
