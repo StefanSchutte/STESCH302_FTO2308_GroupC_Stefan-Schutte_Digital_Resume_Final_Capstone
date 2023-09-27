@@ -24,7 +24,7 @@ body {
   align-items: center;
 }
 
-h4 {
+h1 {
   font-size: 50px;
   color: whitesmoke;
 
@@ -74,7 +74,7 @@ label {
     height: 50px;
   }
 
-  h4 {
+  h1 {
     font-size: 30px;
   }
 }
