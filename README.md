@@ -19,7 +19,7 @@ The projects section is used to showcase previous projects I have done. Images w
 
 Skills sections is just a basic unordered list.
 
-The Footer contains a table which has links to my social profiles/pages. CSS grid is used to display it well organized throughout all displays. My footer also contains a button link to my form which sends a email to my email address through formsubmit.
+The Footer contains a table which has links to my social profiles/pages. CSS grid is used to display it well organized throughout all displays. My footer also contains a button link to my form which sends a email to my email address through formspree.
 
 List of technologies used in project:
 HTML
