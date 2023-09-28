@@ -17,7 +17,6 @@ body {
 /* Aside */
 
 aside {
-  background-color: transparent;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   display: flex;
@@ -40,7 +39,6 @@ header {
   justify-content: center;
   width: 100%;
   max-height: 300px;
-
   margin-top: -220px;
 }
 @keyframes headerSlide {
