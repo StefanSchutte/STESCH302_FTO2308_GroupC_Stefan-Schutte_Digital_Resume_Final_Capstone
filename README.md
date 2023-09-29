@@ -1,4 +1,4 @@
-# STESCH302_FTO2308_GroupC_Stefan-Schutte_Resume_9_Final_Capstone
+# STESCH302_FTO2308_GroupC_Stefan-Schutte_ITW_Final_Digital_Resume
 
 This is Stefan Schutte's Digital Resume.
 
