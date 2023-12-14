@@ -29,3 +29,5 @@ Github
 Formspree
 
 Figma link: https://www.figma.com/file/reTwkufWXpEeRHaHrfRK9D/STESCH302_FTO2308_GroupC_Stefan%2BSchutte_ITW_Final_Digital_Resum%C3%A9?type=design&node-id=0%3A1&mode=design&t=3aFumEjNXILcudUz-1
+
+Deployed site: https://stefanschutte-digital-resume.netlify.app/
